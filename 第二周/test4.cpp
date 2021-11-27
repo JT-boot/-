@@ -2,6 +2,10 @@ class Solution {
 public:
     //和为 K 的子数组
     //前缀和加两数差
+    /**
+     * 时间复杂度：遍历一遍数组，O(n)
+     * 空间复杂度：前缀和数组加哈希表，O(n)
+     */
     int subarraySum(vector<int>& nums, int k) {
         int n = nums.size();
         vector<int> sum(n + 1);
